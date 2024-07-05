@@ -1,0 +1,158 @@
+@import url('../components/header.css');
+@import url('../components/footer.css');
+
+.container-header {
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.header-login {
+  display: none;
+}
+
+.container-allProducts {
+  display: inline-flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  width: 100%;
+  padding: 2rem;
+
+
+  background-color: var(--input-color);
+}
+
+.allProducts-title {
+  font-weight: 700;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+}
+
+.allProducts-button {
+  width: 9.5rem;
+  height: 2.5rem;
+  padding: .75rem 1rem;
+  border: none;
+
+  font-weight: 600;
+  font-size: .75rem;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+}
+
+.container-allProductsShow {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+
+  margin-top: 1rem;
+}
+
+.product-box-link {
+  display: none;
+}
+
+.product-id {
+  display: block;
+}
+
+.product-box {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+
+  width: 8.75rem;
+  position: relative;
+}
+
+.product-box-img {
+  width: 8.75rem;
+  height: 8.75rem;
+
+  border-radius: .93rem;
+}
+
+.product-box-img:hover {
+  transform: scale(1.1);
+  opacity: 0.3;
+}
+
+.product-delete,
+.product-edit {
+  display: flex;
+  position: absolute;
+
+  cursor: pointer;
+}
+
+.product-delete {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: .187rem;
+  transform: translate(330%, 25%);
+
+  background-color: #fa6d6d;
+}
+
+
+.product-edit {
+  width: 1.56rem;
+  height: 1.56rem;
+  top: 2.2%;
+  transform: translate(430%);
+
+  background-color: rgba(69, 69, 69, .4);
+}
+
+.product-box-title {
+  font-size: .875rem;
+}
+
+.product-box-price {
+  font-weight: 700;
+}
+
+.container-nav {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .container-header {
+    justify-content: flex-start;
+    gap: 2rem;
+
+    padding-left: 11.5rem;
+  }
+
+  .container-tittle {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 8rem 0 9.5rem;
+  }
+
+  .container-allProductsShow {
+    padding: 0 9.5rem;
+  }
+
+  .product-box-img {
+    width: 10.25rem;
+    height: 10.87rem;
+  }
+
+  .product-delete {
+    transform: translate(400%, 60%);
+  }
+
+  .product-edit {
+    height: 1.5rem;
+
+    top: 2.5%;
+    transform: translate(500%, 30%);
+  }
+}
